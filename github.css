@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.search{
+    display: flex;
+    width: 50%;
+}
+.search input{
+    padding: 0.9rem 1rem;
+    width: 100%;
+}
+.search input:focus-visible{
+outline: 1px solid purple;
+}
+.btn{
+    background-color: purple;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(104, 6, 104);
+}
+.btn:active{
+    background-color: rgb(232, 6, 232);
+}
+
+/* for card */
+.profile-box{
+    padding: 4rem 2rem;
+    box-shadow: 0 0 1rem black;
+}
+.profile-box:hover{
+    transform: rotate(-5deg) scale(1.01);
+    transition: 0.5sec ease-in;
+}
+.avtar{
+    height: 10rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.avtar img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    gap: none;
+}
+.top-section button{
+    align-self: end;
+}
+.left-side{
+    
+    align-items: center;
+    gap: 2rem;
+
+}
+.left-side h1{
+    font-size: 1.4rem;
+}
