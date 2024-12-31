@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="box1">
+                <form onsubmit="calculatemarks(event)" class="calculate_percentage" id="calculate_form">
+                    <input class="input" name="cpp" type="number" placeholder="Oops in C++">
+                    <input class="input" name="cn" type="number" placeholder="Computer Network">
+                    <input class="input" name="dm" type="number" placeholder="Discreate Mathematics">
+                    <input class="input" name="dsa" type="number" placeholder="DSA">
+                    <button id="btn">Calculate</button>
+                </form>
+            </div>
+            <div class="content">
+                <h2>Calculate your</h2>
+                <h3>Percentage</h3>
+            </div>
+        </div>  
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
