@@ -1,0 +1,308 @@
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%; /* Full width */
+    height: auto;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+    color: white;
+    font-size: clamp(1rem, 2vw, 3rem); /* Responsive font size */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.navbar h1{
+    margin-top: 2px;
+    top: 0;
+    color: rgb(28, 28, 28);
+    font-size: clamp(2rem, 5vw, 6rem);
+}
+.navbar h1:hover{
+    background-color: transparent rgb(65, 48, 48);
+    color: rgb(234, 38, 38);
+}
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 2rem 0px 20px 0px;
+}
+
+.nav-links li {
+    margin: 0 60px;
+}
+
+.active {
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(241, 28, 28);
+    font-weight: bold;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* Header */
+header {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('pp.jpg');
+    background-size: cover;
+    background-position: center; /* Centered background */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.header-content {
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    padding: 0 2rem;
+    max-width: 90%; /* Restrict content width */
+}
+
+.header-content h2 {
+    font-size: clamp(2rem, 2.5vw, 5rem); /* Responsive scaling */
+}
+
+.header-content h1 {
+    font-size: clamp(2.5rem, 5vw, 8rem);
+    margin: 20px 0;
+}
+
+.line {
+    width: clamp(150px, 50%, 270px); /* Adjust width for screens */
+    height: 10px;
+    background: red;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.ctn {
+    display: inline-block;
+    padding: 20px 40px;
+    background: red;
+    color: aliceblue;
+    border-radius: 30px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    text-transform: uppercase;
+}
+/*Events:Upcoming tours*/
+section{
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    text-align: center;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    color: rgb(53, 39, 39);
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    color: black;
+    margin-top: 10px;
+}
+.row .col{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.row .col img{
+    height: 50rem;
+    width: 60%;
+    border: 2px solid black;
+}
+.col h2{
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    margin: 20px auto;
+}
+.col p{
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
+}
+
+
+/*Explore section */
+.explore{
+    width: 80%; /* Full width */
+    height: 100vh; 
+    background-image: url('Explore.jpg');
+    background-size: cover;
+    background-position: center; /* Centered background */
+}
+.text{
+    margin-left: 15rem;
+    max-width: 90%;
+}
+.text h2{
+ padding-top: 30rem;
+ font-size: clamp(6.5rem, 2.5vw, 3rem);
+}
+.explore .line{
+    margin-left: 0rem;
+    width:  clamp(300px, 70%, 520px); 
+    position: sticky;
+}
+.text p{
+    padding-top: 6rem;
+    font-size: clamp(0.8rem, 1.2vw, 3rem);
+}
+
+/*Upcoming tours*/
+.tours{
+    width: 80%;
+}
+.tours .content .text{
+    margin-left: 1rem;
+}
+.tours .content .text h2{
+    padding-top: 2rem;
+    padding-left: 10rem;
+}
+.tours .content .text p{
+    padding: 1rem 0rem 0rem 15rem;
+}
+.content{
+    display: flex;
+}
+.content .image-gallery{
+    display: flex;
+}
+.image-gallery img{
+    height: 40rem;
+    width: 40rem;
+    border-radius: 12px;
+}
+.in{
+    margin-left: 70rem;
+}
+
+/*Footer*/
+footer{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(54, 34, 34);
+}
+footer p{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: clamp(0.8rem, 1.2vw, 3rem);;
+}
+footer h2{
+    font-size: clamp(6.5rem, 2.5vw, 3rem);
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+@media only screen and (width<= 850px) {
+  .navbar {
+  }
+  .navbar .nav-links .ctn{
+    padding: 2px 5px;
+    background: red;
+    color: aliceblue;
+    border-radius: 30px;
+    font-size: clamp(0.5rem, 0.7vw, 1rem);
+    text-transform: uppercase;
+  }
+
+  .lobo {
+    margin-top: 0px;
+    top: 50px;
+    font-size: clamp(1rem, 2vw, 3rem);
+  }
+  .nav-links {
+    background-image: url();
+     display: flex;
+     flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      padding-left: 350px;
+  }
+
+  .nav-links li {
+      margin: 30px auto;
+  ;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .row .col img{
+    height: 10rem;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 12%; 
+}
+.text{
+    margin-left: 5rem;
+    max-width: 90%;
+}
+.text h2{
+    padding-top: 5rem;
+    font-size: clamp(1.5rem, 0.5vw, 1rem);
+    margin-left: 20px;
+   }
+   .explore .line{
+    margin-left: 0rem;
+    width:  clamp(80px, 50%, 170px); 
+}
+.text p{
+    padding-top: 2rem;
+    font-size: clamp(0.5rem, 1.2vw, 3rem);
+    position: sticky;
+}
+.ctn{
+    display: inline-block;
+    padding: 7px 15px;
+    background: red;
+    color: aliceblue;
+    border-radius: 30px;
+    font-size: clamp(0.5rem, 1.5vw, 2rem);
+    text-transform: uppercase;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content .image-gallery{
+    display: flex;
+    flex-direction: column;
+}
+.image-gallery img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 12px;
+}
+.in{
+    margin-left: 1rem;
+}
+footer p{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: clamp(0.4rem, 1.2vw, 1.5rem);;
+}
+footer h2{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+}
