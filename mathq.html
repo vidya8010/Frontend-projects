@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="mathq.css">
+</head>
+<body>
+    <section>
+        <div class="box">
+            <h1>Score ><span id="score">0</span></h1>
+            <h2 class="question">Q. What is 3 multiply by 4?</h2>
+           <form id="QuestionForm" action="" onsubmit="checkAnswer(event)">
+            <input required type="text" name="answer" placeholder="Enter your answer...">
+            <button type="submit">Submit</button>
+           </form>
+        </div>
+    </section>
+
+    <script src="mathq.js"></script> <!-- Make sure the script is loaded at the end -->
+</body>
+</html>
